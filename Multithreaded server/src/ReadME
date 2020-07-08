@@ -1,0 +1,12 @@
+In a sum-up:
+
+This is a client-server app.
+Clients can create an account and log-in to it,in order to have access to the services of the server.
+The app can :
+1) Track the accounts created
+2) Let each client have his own folder where they can store photos
+3) Manage photo uploads from the clients.Each upload is stored to the server and to the client's local folder.
+4) Handle the follow-unfollow requests from client to client and preserve a catalog with their followers and the accounts they are following.
+   Each client can send a following req based on an acc's ID and can accept or reject reqs from other accounts.
+5) Let clients download photos or just view them (if they follow the client they want to download or view photos from).
+6) Let clients comment on the photos of the accounts the are following,if their comment is accepted from the client they are folloing

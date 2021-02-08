@@ -1,0 +1,5 @@
+﻿  gameMechs.cpp
+C:\Users\Evan\Documents\GitHub\Winter-Semester_2020-2021\C++\MGS\MGS\gameMechs.cpp(43,41): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Evan\Documents\GitHub\Winter-Semester_2020-2021\C++\MGS\MGS\gameMechs.cpp(44,43): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Evan\Documents\GitHub\Winter-Semester_2020-2021\C++\MGS\MGS\gameMechs.cpp(45,43): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  MGS.vcxproj -> C:\Users\Evan\Documents\GitHub\Winter-Semester_2020-2021\C++\MGS\bin\MGSd.exe

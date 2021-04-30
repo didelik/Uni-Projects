@@ -1,0 +1,116 @@
+body {
+  background-color: #e4d3cf;
+}
+
+p{
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    }
+
+h2{
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+h3 {
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  left:2em;
+}
+
+ul li::before {
+  content: "✔";
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+hr {
+  border-style: none none dotted;
+  border-color: grey;
+  border-width: 10px;
+  width: 30%;
+}
+
+img{
+  float: left;
+  border-radius: 50%;
+}
+
+.project{
+  float:left;
+}
+
+
+
+.site_link:link{
+  color:blue;
+}
+
+.site_link:visited{
+  color:#c64756;
+}
+
+.site_link:hover{
+  color:#8c0000;
+}
+
+.site_link:active{
+  color:#5f939a;
+}
+
+
+
+.HomeButton {
+
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+
+.HomeButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+
+.HomeButton:active {
+	position:relative;
+	top:2px;
+}
+
+
+#profile{
+  position: relative;
+  bottom:4rem;
+}
+
+#AboutMe{
+  position: relative;
+  right: 12.5rem;
+}

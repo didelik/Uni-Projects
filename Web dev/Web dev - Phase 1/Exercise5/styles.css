@@ -1,0 +1,456 @@
+/* ----------------------GLOBAL SELECTORS------------------- */
+@font-face {
+  font-family: RobotoSlab;
+  src: url('fonts/RobotoSlab-Regular.ttf');
+}
+
+body {
+  background-color: #289672;
+  margin: 0;
+}
+
+p {
+  font-family: RobotoSlab;
+  font-size: 1.1rem;
+}
+
+h1 {
+  color: #111;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+img {
+  width: 30rem;
+}
+
+.button {
+  height: 20px;
+  width: 100px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 10px;
+  background-color: #F6A53D;
+  box-shadow: 5px 1px 25px 0 #000000;
+  text-shadow: -4px -3px 20px #000000;
+  border: solid #0059A0 1px;
+  display: inline-block;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  border: inset #000000 0;
+  background: #1E62D0;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+/* ----------------------END OF GLOBAL SELECTORS------------------- */
+/*-------------------------INDEX PAGE-------------------------------- */
+.navigator {
+  grid-area: navigator;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headline {
+  display: flex;
+  grid-area: headline;
+  justify-content: space-around;
+}
+
+.coin {
+  border-radius: 50%;
+}
+
+.home-left {
+  grid-area: home-left;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.home-right {
+  grid-area: home-right;
+  margin-right: 2rem;
+}
+
+.home-img-section {
+  grid-area: home-img-section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-footer {
+  display: flex;
+  grid-area: home-footer;
+  background-color: #194350;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.fa {
+  padding: 20px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+#footer-text {
+  color: white;
+  position: absolute;
+  left: 10%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+
+/* -------------------------------MOBILE MODE INDEX PAGED(DEFAULT)----------------------- */
+.grid-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+    "navigator"
+    "headline"
+    "home-img-section"
+    "home-left"
+    "home-right"
+    "home-footer";
+}
+
+.coin {
+  width: 20%;
+}
+
+.navigator {
+  justify-content: center;
+}
+
+.button {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.home-img-section {
+  flex-direction: row;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/* -------------------------------END OF MOBILE MODE INDEX PAGE----------------------- */
+
+
+
+/* -------------------------------TABLET MODE INDEX PAGE----------------------- */
+@media screen and (min-width: 720px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+      "navigator navigator"
+      "headline headline"
+      "home-img-section home-img-section"
+      " home-left home-right"
+      " home-left home-right"
+      "home-footer home-footer";
+  }
+
+  .button {
+    height: 20px;
+    width: 120px;
+  }
+
+  .home-img-section {
+    flex-direction: row;
+  }
+}
+
+/* -------------------------------END OF TABLET MODE INDEX PAGE----------------------- */
+
+
+
+/* -------------------------------DESKTOP MODE INDEX PAGE----------------------- */
+@media screen and (min-width: 1300px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+      "navigator navigator navigator"
+      "headline headline headline"
+      "home-img-section home-left home-right"
+      "home-footer home-footer home-footer";
+  }
+
+  .coin {
+    width: 30rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .home-img-section {
+    flex-direction: column;
+  }
+
+  img {
+    width: 25rem;
+  }
+
+  .button {
+    margin: 0 7%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+/* -------------------------------END OF DESKTOP MODE INDEX PAGE----------------------- */
+
+
+
+
+/*-------------------------END OF INDEX PAGE-------------------------------- */
+
+
+
+
+/* -------------------------------PAGE 1---------------------------------- */
+
+
+
+
+/* -------------------------------PAGE 1 MOBILE VIEW(DEFAULT)----------------------- */
+.grid-container-1 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+    "navigator"
+    "headline-1"
+    "page1-left"
+    "page1-middle"
+    "page1-right"
+}
+
+.page1 {
+  margin: 1rem;
+}
+
+.headline-1 {
+  grid-area: headline-1;
+  text-align: center;
+}
+
+.page1-left {
+  grid-area: page1-left;
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+
+.page1-middle {
+  grid-area: page1-middle;
+  margin: 5rem auto;
+}
+
+.page1-right {
+  grid-area: page1-right;
+  margin-left: 3rem;
+}
+
+.button {
+  font-size: 1.3rem;
+  width: 6rem;
+  height: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+/* ------------------------------END OF MOBILE VIEW PAGE 1------------------------------ */
+
+
+
+
+/* ------------------------------TABLET VIEW PAGE 1------------------------------ */
+@media screen and (min-width: 720px) {
+  .grid-container-1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+      "navigator navigator"
+      "headline-1 headline-1"
+      "page1-left page1-middle"
+      "page1-right page1-right"
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .button {
+    font-size: 1.3rem;
+    width: 6rem;
+    height: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 5rem;
+  }
+}
+/* ------------------------------END OF TABLET VIEW PAGE 1------------------------------ */
+
+
+
+/* ----------------------------------------DESKTOP MODE PAGE 1--------------------------------- */
+@media screen and (min-width: 1300px) {
+  .grid-container-1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+      "navigator navigator navigator"
+      "headline-1 headline-1 headline-1"
+      "page1-left page1-middle page1-right"
+  }
+
+  .button {
+    margin: 0 7%;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+/* -------------------------------END OF PAGE 1---------------------------------- */
+
+
+
+
+/*------------------------------------------ PAGE 2 ------------------------------------*/
+
+
+
+/* -------------------------------PAGE 2 MOBILE VIEW(DEFAULT)----------------------- */
+.grid-container-2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+    "navigator"
+    "headline-2"
+    "intro-2"
+    "method1-2"
+    "method2-2"
+}
+
+.headline-2 {
+  grid-area: headline-2;
+  text-align: center;
+}
+
+.intro-2 {
+  grid-area: intro-2;
+  margin-left: 2rem;
+}
+
+.method1-2 {
+  grid-area: method1-2;
+  margin-left: 1rem;
+}
+
+.method2-2 {
+  grid-area: method2-2;
+  margin-left: 1rem;
+}
+
+/* -------------------------------END OF PAGE 2 MOBILE VIEW(DEFAULT)----------------------- */
+
+
+
+/* -------------------------------PAGE 2 TABLET VIEW----------------------- */
+@media screen and (min-width: 720px) {
+  .grid-container-2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+      "navigator navigator "
+      "headline-2 headline-2"
+      "intro-2 intro-2"
+      "method1-2 method2-2"
+  }
+
+  .button {
+    margin: 0 7%;
+  }
+}
+
+/* -------------------------------END OF PAGE 2 TABLET VIEW----------------------- */
+
+
+
+
+/* -------------------------------PAGE 2 DESKTOP VIEW----------------------- */
+@media screen and (min-width: 1300px) {
+  .grid-container-2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template:
+      "navigator navigator navigator"
+      "headline-2 headline-2 headline-2"
+      "intro-2 method1-1 method2-1"
+      "intro-2 method1-2 method2-2"
+  }
+
+  .button {
+    margin: 0 7%;
+  }
+}
+
+/* ------------------------------END OF PAGE 2 DESKTOP VIEW----------------------- */
+
+
+/* ------------------------------END OF PAGE 2 ----------------------- */

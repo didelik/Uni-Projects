@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <script src="form.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navigator">
+    <div class="button"><a href="index.html">Home</div>
+    <div class="button"><a href="page1.html">Crypto Wallets</a></div>
+    <div class="button"><a href="page2.html">Investing Tactics</a></div>
+    <div class="button"><a href="page3.html" style="color:blue;">Sign Up</a></div>
+  </div>
+
+  <h1>Sign up to Crypto World</h1>
+
+  <details>
+    <summary><strong>Sign up reminder</strong></summary>
+    <p style="font-size:0.8rem;"><em>We will never ask you for your personal information such as
+        your username,password or your banking card number.<br>This account
+        can only be used to unlock all of our articles and get notifications
+        for our new posts :)</em>
+      .</p>
+  </details>
+
+
+  <form class="" action="index.html" method="GET">
+
+    <fieldset style="background-color:lightblue;border-radius:10%;text-align:center">
+      <h2>Crypto form</h2>
+
+      <label for="FirstName">First Name:</label>
+      <input type="text" name="FirstName" id="FirstName" placeholder="Konstantinos" required>
+
+      <label for="LastName">Last Name:</label>
+      <input type="text" name="LastName" placeholder="Papadopoulos" required><br><br>
+
+      <label for="Email">Email:</label>
+      <input type="email" name="Email" placeholder="test123@gmail.com" autocomplete="on" required> <br><br>
+
+      <label for="Password">Password:</label>
+      <input type="password" name="Password" id="password" value="" required>
+      <label for="ConfPassword">Confirm password:</label>
+      <input type="password" name="ConfPassword" id="confPassword" required><br><br>
+
+      <label for="Phone">Phone number:</label>
+      <input type="tel" name="Phone" pattern="[0-9]{10}" placeholder="6953321842" autocomplete="on"><br><br>
+
+      <label for="Birthday">Birthday:</label>
+      <input type="date" name="Birthday" required><br><br>
+
+
+      <label for="choice">Choose why you want this account:</label>
+      <input list="reasons" id="choice" name="choice" required />
+
+      <datalist id="reasons">
+        <option value="My profession">
+        <option value="Picking up crypto trading">
+        <option value="General Knowledge">
+        <option value="Other">
+      </datalist>
+      <br><br>
+
+      <label for="feedback">Give us feedback(optional):</label><br>
+      <textarea name="feedback" id="feedback"></textarea>
+
+
+
+
+
+      <br><br>
+      <button type="submit" name="reset">Submit</button>
+      <button type="reset" name="reset">Reset</button>
+
+
+    </fieldset>
+  </form>
+
+
+
+
+
+</body>
+
+
+</html>
